@@ -68,7 +68,7 @@ inquirer
             console.log(followers);
 
             //     -number of stars
-            // let stars = res.data.
+            let stars = res.data.gists;
 
             //     -number of users following
             let following = res.data.following;

@@ -67,7 +67,9 @@
          justify-content: center;
          flex-wrap: wrap;
          /* background-color: ${colors[data.color].headerBackground}; */
+         background-color: #C1C72C;
          /* color: ${colors[data.color].headerColor}; */
+         color: black;
          padding: 10px;
          width: 95%;
          border-radius: 6px;
@@ -79,6 +81,7 @@
          object-fit: cover;
          margin-top: -75px;
          /* border: 6px solid ${colors[data.color].photoBorderColor}; */
+         border: 6px solid black;
          box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
          }
          .photo-header h1, .photo-header h2 {
@@ -154,7 +157,39 @@
                 <h1>Hi!</h1>
                 <!-- <h2>My name is ${data.name}</h2> -->
                 <h2>My name is Nichole Steig</h2>
+                <ul class="links-nav">
+                    <li class="nav-link"><a href="https://www.google.com/maps/search/?api=1&query=${data.location}">${data.location}</a></li>
+                    <li class="nav-link"><a href="${data.html_url}">GitHub<Github</a></li>
+                    <li class="nav-link"><a href="${data.blog}">Blog</a></li>
+                </ul>
                 </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <h3 class="col">${data.bio}</h3>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                          <div class="card">
+                              <h3>Public Repositories</h3>
+                              <h4>${data.public_repos}</h4>
+                          </div>
+                          <div class="card">
+                              <h3>Followers</h3>
+                              <h4>${data.followers}</h4>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="card">
+                              <h3>Github Stars</h3>
+                              <h4>${data.public_gists}</h4>
+                          </div>
+                          <div class="card">
+                              <h3>Followers</h3>
+                              <h4>${data.followers}</h4>
+                          </div>
+                      </div>
+                  </div>
               </div>
             </body>
     </body>
