@@ -34,27 +34,45 @@ inquirer
 
             //     -image
             let imageURL = res.data.avatar_url;
+            console.log(imageURL);
+
             //     -username
             let login = res.data.login;
             let name = res.data.name;
+            console.log(login);
+            console.log(name);
+
             //     -links to:
             //         -location (google maps)
             let location = res.data.location;
+            console.log(location);
+
             //         -github profile
             let gitURL = res.data.html_url;
+            console.log(gitURL);
+
             //         -blog
             let blog = res.data.blog;
+            console.log(blog);
+
             //     -bio
             let bio = res.data.bio;
+            console.log(bio);
+
             //     -number of public repos
-            let publicRepos = res.data.public_repos;
+            let repos = res.data.public_repos;
+            console.log(repos);
+
             //     -number of followers
             let followers = res.data.followers;
+            console.log(followers);
+
             //     -number of stars
             // let stars = res.data.
+
             //     -number of users following
             let following = res.data.following;
-            
+            console.log(following);
         });
     });
 
